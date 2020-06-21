@@ -4,6 +4,7 @@ def valid_move?(board, index)
     if position_taken?(board, index)
       return true
     end
+  else index.between?(0,8)  && position_taken(board, index)
   end
 end
 #
