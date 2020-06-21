@@ -2,7 +2,7 @@
 def valid_move?(board, index)
   if position_taken?(board, index)
     return true
-  else board[index](-1..9).to_a
+  else board[-1..9].to_a
     return false
   end
 end
