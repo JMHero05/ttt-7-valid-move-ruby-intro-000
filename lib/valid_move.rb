@@ -1,9 +1,11 @@
 # code your #valid_move? method here
 def valid_move?(board, index)
-  if position_taken?(board, index)
-    return true
-  else board[-1..9].to_a
+  if board[-1..9].to_a
     return false
+  elsif position_taken?(board, index)
+    return true
+  else 
+    return nil
   end
 end
 
